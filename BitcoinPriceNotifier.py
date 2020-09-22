@@ -45,11 +45,11 @@ while True:
             driver.quit()
             textToSpeech.say("Price is higher than benchmark")
             textToSpeech.runAndWait()
-        break
+            break
     if currentPrice < benchmark:
         if displayHigher == False:
             print(str(currentPrice) + " is lower than benchmark: " + str(benchmark))
             driver.quit()
             textToSpeech.say("Price is lower than benchmark")
             textToSpeech.runAndWait()
-        break
+            break
